@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "admin@in.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "nandry",
+      "name": "nandry",
+      "password": "nandry22",
+      "email": "nandry556@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    }
+  ]
+}
