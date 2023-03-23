@@ -1,26 +1,28 @@
-<mat-card>
-    <mat-card-header> 
-        <h1> Authentification  </h1>
-    </mat-card-header>
+<mat-card class="example-card">
+    <form class="example-form" [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+        <mat-card-header> 
+            <h1> Authentification  </h1>
+        </mat-card-header>
 
-    <mat-card-content>
-        <form class="example-form" [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
-            <mat-form-field class="example-full-width">
-                <mat-label>Nom d'utilisateur </mat-label>
-                <input matInput formControlName="username">
-            </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>Mot de passe</mat-label>
-                <input type="password" matInput formControlName="password">
-            </mat-form-field>
-            <div>
-                <button mat-raised-button color="primary"> Connexion  </button>
-            </div>
-    
-        </form>
-
-    </mat-card-content>
+        <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nom d'utilisateur </mat-label>
+                    <input matInput formControlName="username">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Mot de passe</mat-label>
+                    <input type="password" matInput formControlName="password">
+                </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions class="example-button-row">
+            <button mat-raised-button color="primary"> Connexion  </button>
+            <a routerLink="/register" mat-raised-button color="accent"> Inscription </a>
+        </mat-card-actions>
+    </form>
 </mat-card>
+
+
+  
   
 
   

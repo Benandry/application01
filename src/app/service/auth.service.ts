@@ -16,6 +16,11 @@ export class AuthService {
     return this.http.get(this.apiUrl)
   }
 
+  getAllRole() {
+    return this.http.get("http://localhost:3000/role");
+  }
+   
+
   getByCode(code : any ){
     return this.http.get(this.apiUrl+'/'+code);
   }
@@ -35,4 +40,6 @@ export class AuthService {
   getUserRole() {
     return sessionStorage.getItem('userrole') != null ?  sessionStorage.getItem('userrole') ?.toString() : '';
   }
+
+  // getUserCurrent ()
 }

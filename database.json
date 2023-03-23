@@ -15,8 +15,31 @@
       "password": "nandry22",
       "email": "nandry556@gmail.com",
       "gender": "male",
-      "role": "",
+      "role": "comptable",
       "isActive": true
+    },
+    {
+      "id": "Rakoto",
+      "name": "Rakoto",
+      "password": "koto",
+      "email": "koto@in.fr",
+      "gender": "male",
+      "role": "staff",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "comptable",
+      "name": "Comptable"
     }
   ]
 }

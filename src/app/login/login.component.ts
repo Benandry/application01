@@ -37,6 +37,9 @@ export class LoginComponent {
           if (this.userData.isActive) {
             sessionStorage.setItem('username',this.userData.id);
             sessionStorage.setItem('userrole',this.userData.role);
+            sessionStorage.setItem('name',this.userData.name);
+            sessionStorage.setItem('email',this.userData.email);
+            sessionStorage.setItem('gender',this.userData.gender);
             this.router.navigate(['']);
           }else{
             this.toastr.error("Contatez les administrateur pour activer les compte utilisateur","Compte desactiver");
