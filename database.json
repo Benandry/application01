@@ -100,69 +100,14 @@
   ],
   "customer": [
     {
-      "id": 1,
-      "name": "Customer 01",
-      "creditLimit": 1000
-    },
-    {
       "id": 2,
-      "name": "Customer 02",
-      "creditLimit": 1500
+      "name": "Customer modifier",
+      "creditLimit": 1200
     },
     {
       "id": 3,
       "name": "Customer 03",
-      "creditLimit": 1200
-    },
-    {
-      "id": 4,
-      "name": "Customer 05",
-      "creditLimit": 1700
-    },
-    {
-      "id": 5,
-      "name": "Customer 06",
-      "credit": 1200
-    },
-    {
-      "id": 6,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 7,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 8,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 9,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 10,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 11,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 12,
-      "name": "Customer 07",
-      "credit": 1600
-    },
-    {
-      "id": 13,
-      "name": "Customer 56",
-      "credit": 100
+      "creditLimit": 3000
     }
   ]
 }

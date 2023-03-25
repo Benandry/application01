@@ -30,6 +30,7 @@ export class UpdateUpComponent implements OnInit {
     })
 
     if (this.data.user_code != null && this.data.user_code !="") {
+    
       this.service.getByCode(this.data.user_code).subscribe( res => {
         this.editData = res;
         this.editForm.setValue(  {

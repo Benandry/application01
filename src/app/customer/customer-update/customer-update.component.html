@@ -1,10 +1,9 @@
 <mat-card class="">
     <mat-card-header> 
-        <h1>Ajout de nuveau customers</h1>
+        <h1>Modification customers</h1>
     </mat-card-header>
-    <form class="example-form" [formGroup]="formCustomer" (ngSubmit)="createCustomer()">
+    <form class="example-form" [formGroup]="formCustomer" (ngSubmit)="updateCustomer()">
         <mat-card-content>
-            
             <mat-form-field class="example-full-width">
                 <mat-label> Nom :  </mat-label>
                 <input matInput formControlName="name">

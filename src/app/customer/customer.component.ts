@@ -9,8 +9,8 @@ import { AuthService } from '../service/auth.service';
 import { CustomerService } from '../service/customer.service';
 import { RolesAccessService } from '../service/roles-access.service';
 import { CustomerDeleteComponent } from './customer-delete/customer-delete.component';
-import { CustomerUpdateComponent } from '../customer-update/customer-update.component';
 import { CustomerAddComponent } from '../customer-add/customer-add.component';
+import { CustomerUpdateComponent } from './customer-update/customer-update.component';
 
 @Component({
   selector: 'app-customer',
@@ -76,7 +76,10 @@ export class CustomerComponent {
       const dialogUpdate = this.dialog.open(CustomerUpdateComponent,{
         width: "30%",
         enterAnimationDuration: "500ms",
-        exitAnimationDuration : "500ms"
+        exitAnimationDuration : "500ms",
+        data : {
+          id_customer : id
+        }
       })
   
       dialogUpdate.afterClosed().subscribe( res => {
@@ -86,12 +89,17 @@ export class CustomerComponent {
         this.toastr.warning("Access refus","Vous n'avez pas le droit de modifier");
     }
   }
+
+
   removeCustomer(id : any){
     if (this.haveDelete) {
       const dialogUpdate = this.dialog.open(CustomerDeleteComponent,{
         width: "30%",
         enterAnimationDuration: "500ms",
-        exitAnimationDuration : "500ms"
+        exitAnimationDuration : "500ms",
+        data : {
+          id_customer : id
+        }
       })
   
       dialogUpdate.afterClosed().subscribe( res => {

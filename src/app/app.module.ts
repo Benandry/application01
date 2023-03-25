@@ -15,8 +15,8 @@ import { UserListingComponent } from './user-listing/user-listing.component';
 import { UpdateUpComponent } from './update-up/update-up.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
-import { CustomerUpdateComponent } from './customer-update/customer-update.component';
 import { CustomerAddComponent } from './customer-add/customer-add.component';
+import { CustomerUpdateComponent } from './customer/customer-update/customer-update.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +27,9 @@ import { CustomerAddComponent } from './customer-add/customer-add.component';
     UserListingComponent,
     UpdateUpComponent,
     CustomerComponent,
-    CustomerUpdateComponent,
     CustomerAddComponent,
-    CustomerDeleteComponent
+    CustomerDeleteComponent,
+    CustomerUpdateComponent
   ],
   imports: [
     BrowserModule,
