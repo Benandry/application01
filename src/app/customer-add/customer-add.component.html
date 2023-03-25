@@ -1,0 +1,25 @@
+<mat-card class="">
+    <mat-card-header> 
+        <h1>Ajout de nuveau customers</h1>
+    </mat-card-header>
+    <form class="example-form" [formGroup]="formCustomer" (ngSubmit)="createCustomer()">
+        <mat-card-content>
+            
+            <mat-form-field class="example-full-width">
+                <mat-label> Nom :  </mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label> Credit : </mat-label>
+                <input type="number" matInput formControlName="credit">
+            </mat-form-field>
+
+        </mat-card-content>
+        <mat-card-actions class="example-button-row">
+            <button mat-raised-button color="primary"> Enregistrer  </button>
+            <button mat-dialog-close mat-raised-button color="accent">Fermer  </button>
+        </mat-card-actions>
+        
+    </form>
+</mat-card>

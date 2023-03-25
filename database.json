@@ -26,6 +26,15 @@
       "gender": "male",
       "role": "staff",
       "isActive": true
+    },
+    {
+      "id": "Charlie",
+      "name": "passage",
+      "password": "pass0012",
+      "email": "charlie@in.fr",
+      "gender": "male",
+      "role": "comptable",
+      "isActive": true
     }
   ],
   "role": [
@@ -40,6 +49,120 @@
     {
       "code": "comptable",
       "name": "Comptable"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleacces": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "tech",
+      "menu": "customer",
+      "haveedit": false,
+      "haveadd": true,
+      "havedelete": false
+    },
+    {
+      "role": "staff",
+      "menu": "customer",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Customer 01",
+      "creditLimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "Customer 02",
+      "creditLimit": 1500
+    },
+    {
+      "id": 3,
+      "name": "Customer 03",
+      "creditLimit": 1200
+    },
+    {
+      "id": 4,
+      "name": "Customer 05",
+      "creditLimit": 1700
+    },
+    {
+      "id": 5,
+      "name": "Customer 06",
+      "credit": 1200
+    },
+    {
+      "id": 6,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 7,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 8,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 9,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 10,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 11,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 12,
+      "name": "Customer 07",
+      "credit": 1600
+    },
+    {
+      "id": 13,
+      "name": "Customer 56",
+      "credit": 100
     }
   ]
 }

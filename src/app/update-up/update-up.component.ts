@@ -66,7 +66,6 @@ export class UpdateUpComponent implements OnInit {
   else{
     this.toastr.warning("Selectionner un de ces roles");
   }
-  // this.service.updateUser( this.registerForm.value)
  }
 
 }

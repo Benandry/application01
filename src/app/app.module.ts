@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserListingComponent } from './user-listing/user-listing.component';
 import { UpdateUpComponent } from './update-up/update-up.component';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
+import { CustomerUpdateComponent } from './customer-update/customer-update.component';
+import { CustomerAddComponent } from './customer-add/customer-add.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { UpdateUpComponent } from './update-up/update-up.component';
     LoginComponent,
     HomeComponent,
     UserListingComponent,
-    UpdateUpComponent
+    UpdateUpComponent,
+    CustomerComponent,
+    CustomerUpdateComponent,
+    CustomerAddComponent,
+    CustomerDeleteComponent
   ],
   imports: [
     BrowserModule,
