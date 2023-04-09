@@ -1,0 +1,43 @@
+<mat-toolbar class="toolbar">
+    <a routerLink="home"> E-commerce </a>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon [matBadge]="length_ship" matBadgeColor="accent">shopping_cart</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <div class="divide">
+            <div class="menu-items">
+                <span class="item"> {{ length_ship }} product </span>
+                <a routerLink="cart">
+                     Voir panier ({{ length_ship }})
+                </a>
+            </div>
+            <hr>
+           <div class="py-2">
+                <div class="price">
+                    keybord 1 x 
+                    <span class="font-bold"> {{ '1000' | currency : 'Ar ' }} </span>
+                </div>
+                <div class="price">
+                    keybord 1 x 
+                    <span class="font-bold"> {{ '1000' | currency : 'Ar ' }} </span>
+                </div>
+                <div class="price">
+                    keybord 1 x 
+                    <span class="font-bold"> {{ '1000' | currency : 'Ar ' }} </span>
+                </div>
+                <hr>
+           </div>
+           <div class="flex pl-3">
+                total : <span class="font-bold"> {{ '3000' | currency : " Ar "}}</span>
+           </div>
+           <div class="pt-3 flex">
+            <button mat-icon-button class="remove-shopping-accent" >
+                <mat-icon> remove_shopping_cart</mat-icon>
+            </button>
+            <button routerLink="cart" mat-icon-button class="remove-shopping-green" >
+                <mat-icon> remove_shopping_cart</mat-icon>
+            </button>
+           </div>
+        </div>
+    </mat-menu>
+</mat-toolbar>

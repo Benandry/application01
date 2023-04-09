@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" *ngIf="is_menu_required">
+    <a routerLink="">  
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </a>
+    <a *ngIf="is_admin_user" routerLink="/user-list"> 
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon [matBadge]="length_person" matBadgeColor="accent">people_alt</mat-icon>
+        </button>    
+    </a>
+    <a routerLink="/customer"> Customers </a>
+    <a routerLink="/crud"> CRUD User </a>
+    <a routerLink="/register"> 
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>person_add</mat-icon>
+        </button>
+    </a>
+    <a routerLink="/store"> 
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    </a>
+    <a routerLink="/login"> 
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>power_settings_new</mat-icon>
+        </button>
+    </a>
+</mat-toolbar>

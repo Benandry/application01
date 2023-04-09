@@ -35,6 +35,15 @@
       "gender": "male",
       "role": "comptable",
       "isActive": true
+    },
+    {
+      "name": "Customers modifier",
+      "password": "sPfrFGEWy5Najms",
+      "email": "11@dr.com",
+      "gender": "male",
+      "role": "user",
+      "isActive": false,
+      "id": "5U6dRoT"
     }
   ],
   "role": [

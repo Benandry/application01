@@ -22,12 +22,12 @@ export class RegisterComponent {
     }
 
     registerForm = this.builder.group({
-       id : this.builder.control('',Validators.compose([Validators.required,Validators.minLength(5)])),
+      //  id : this.builder.control('',Validators.compose([Validators.required,Validators.minLength(5)])),
        name : this.builder.control('', Validators.required),
        password : this.builder.control('',Validators.compose([Validators.required])),
        email : this.builder.control('',Validators.compose([Validators.required,Validators.email])),
        gender : this.builder.control('male'),
-       role : this.builder.control(''),
+       role : this.builder.control('user'),
        isActive : this.builder.control(false),
     })
 

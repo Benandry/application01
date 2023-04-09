@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/material.module';
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { ToastrModule } from "ngx-toastr";
 import { RegisterComponent } from './register/register.component';
@@ -17,6 +17,11 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
 import { CustomerAddComponent } from './customer-add/customer-add.component';
 import { CustomerUpdateComponent } from './customer/customer-update/customer-update.component';
+import { CrudUserComponent } from './crud-user/crud-user.component';
+import { StoreComponent } from './store/store.component';
+import { HeaderComponent } from './store/header/header.component';
+import { HomeStoreComponent } from './store/home-store/home-store.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { CustomerUpdateComponent } from './customer/customer-update/customer-upd
     CustomerComponent,
     CustomerAddComponent,
     CustomerDeleteComponent,
-    CustomerUpdateComponent
+    CustomerUpdateComponent,
+    CrudUserComponent,
+    StoreComponent,
+    HeaderComponent,
+    HomeStoreComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +47,7 @@ import { CustomerUpdateComponent } from './customer/customer-update/customer-upd
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
   ],

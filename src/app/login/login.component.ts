@@ -40,7 +40,7 @@ export class LoginComponent {
             sessionStorage.setItem('name',this.userData.name);
             sessionStorage.setItem('email',this.userData.email);
             sessionStorage.setItem('gender',this.userData.gender);
-            this.router.navigate(['']);
+            this.router.navigate(['store']);
           }else{
             this.toastr.error("Contatez les administrateur pour activer les compte utilisateur","Compte desactiver");
           }
@@ -48,7 +48,6 @@ export class LoginComponent {
         else{
           this.toastr.error("Information incorrect");
         }
-        
       })
     }
     else{

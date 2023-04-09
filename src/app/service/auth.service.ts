@@ -25,7 +25,12 @@ export class AuthService {
     return this.http.get(this.apiUrl+'/'+code);
   }
 
-  proceedRegister(inputData : any ){
+  // proceedRegister(inputData : any ){
+  //   console.log(this.http.post("http://localhost:3200/users/new",inputData));
+  //   return this.http.post("http://localhost:3200/users/new",inputData);
+  // }
+
+   proceedRegister(inputData : any ){
     return this.http.post(this.apiUrl,inputData);
   }
 

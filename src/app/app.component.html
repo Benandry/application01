@@ -1,17 +1,6 @@
-<mat-toolbar color="primary" *ngIf="is_menu_required">
-  <a routerLink="">  
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </a>
-  <a *ngIf="is_admin_user" routerLink="/user-list"> Utilisateur </a>
-  <a routerLink="/customer"> Customers </a>
-  <a routerLink="/register"> Inscription </a>
-  <a routerLink="/login"> Deconnecter</a>
-</mat-toolbar>
-
-
-
+<!-- <app-store *ngIf="store"></app-store> -->
+<app-header ></app-header>
+<!-- <app-toolbar *ngIf="current_menu"></app-toolbar> -->
 <div class="content" style="width: 100%; display: block;" role="main">
   <router-outlet></router-outlet>
 </div>

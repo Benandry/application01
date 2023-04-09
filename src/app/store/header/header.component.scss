@@ -1,0 +1,50 @@
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+  }
+.divide{
+    padding: 1.3rem;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.3rem;
+}
+
+.item{
+    margin-right: 2rem;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    color: #444444;
+}
+.font-bold{
+    font-weight: bold;
+}
+.py-2{
+    padding-left: 1.2rem;
+}
+.pl-3{
+    padding-left: 1.3rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.pt-3{
+    padding-top: 1.3rem;
+}
+
+.remove-shopping-accent{
+    background-color: #d64d7c;
+    color: #fff;
+}
+
+.remove-shopping-green{
+    background-color: #329171;
+    color: #fff;
+}
