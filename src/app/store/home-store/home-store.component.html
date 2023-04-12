@@ -1,6 +1,51 @@
-<mat-drawer-container [autosize]="true" class="min-h-full max-w-7xl mx-auto border-x">
+<!-- <mat-drawer-container 
+        [autosize]="true" 
+        class="min-h-full max-w-7xl mx-auto border-x"
+        >
     <mat-drawer mode="side" opened>
         <div class=""> Filter side Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum modi reiciendis aut nulla sapiente illo officia voluptatibus aspernatur. Eaque tempora autem eveniet consequatur, esse minus modi recusandae harum reiciendis iusto!</div>
     </mat-drawer>
  
-</mat-drawer-container>
+</mat-drawer-container> -->
+
+<mat-card class="mb-4">
+    <div class="flex justify-between">
+        <div>
+            <button mat-button [matMenuTriggerFor]="sortByMenu">
+                    Sort by {{  sort }}
+                    <span>
+                        <mat-icon> expand_more</mat-icon>
+                    </span>
+            </button>
+            <mat-menu #sortByMenu="matMenu" >
+                <button  (click)="onSortUpdated('desc')" mat-menu-item> DESC</button>
+                <button mat-menu-item (click)="onSortUpdated('asc')" > ASC</button>
+            </mat-menu>
+        </div>
+        <div class="flex item-center">
+            <div>
+                <button mat-button [matMenuTriggerFor]="showMenu">
+                    Show {{ itemShowCount }}
+                    <span>
+                        <mat-icon> expand_more</mat-icon>
+                    </span>
+                </button>
+                <mat-menu #showMenu="matMenu">
+                    <button mat-menu-item (click)="onItemUpdated(12)"> 12 </button>
+                    <button mat-menu-item (click)="onItemUpdated(30)"> 30 </button>
+                    <button mat-menu-item (click)="onItemUpdated(50)"> 50 </button>
+                    <button mat-menu-item (click)="onItemUpdated(100)"> 100 </button>
+                </mat-menu>
+            </div>
+            <button mat-icon-button (click)="onColumnsUpdated(1)">
+                <mat-icon>view_list</mat-icon>
+            </button>
+            <button mat-icon-button (click)="onColumnsUpdated(2)">
+                <mat-icon>view_module</mat-icon>
+            </button>
+            <button mat-icon-button (click)="onColumnsUpdated(3)">
+                <mat-icon>view_comfy</mat-icon>
+            </button>
+        </div>
+    </div>
+</mat-card>

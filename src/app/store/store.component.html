@@ -1,0 +1,29 @@
+<div class="flex">
+    <div class="sidebar">
+        <h3> Rechercher par : </h3>
+        <app-filters
+            (showCategory)="onShowCategory($event)"
+            ></app-filters>
+    </div>
+    <div class="container">
+        <app-home-store 
+            (columnsCountChange)="onColumnsUpdated($event)"
+            (itemsCountChange)="onItemsCountChange($event)"
+            (sortChange)="onSortChange($event)"
+            ></app-home-store>
+       <mat-grid-list
+        gutterSize="16"
+        [cols]="cols"
+        [rowHeight]="rowHeight"
+       >
+        <mat-grid-tile *ngFor="let product of products">
+            <app-product-box 
+                    [product]="product"
+                    [fullWidthMode]="cols === 1"
+                    (addToCart)="onAddTocart($event)"
+                    ></app-product-box>
+        </mat-grid-tile>
+
+       </mat-grid-list>
+    </div> 
+</div>

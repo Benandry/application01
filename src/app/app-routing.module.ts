@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserListingComponent } from './user-listing/user-listing.component';
 import { StoreComponent } from './store/store.component';
 import { HomeStoreComponent } from './store/home-store/home-store.component';
+import { CartComponent } from './store/cart/cart.component';
 
 const routes: Routes = [
   {path : '',component : HomeComponent,canActivate: [AuthGuard]},
@@ -19,7 +20,8 @@ const routes: Routes = [
   { component : CrudUserComponent , path : "crud" },
   // THis is route for all module of store 
   { component : StoreComponent, path: 'store',canActivate : [AuthGuard] },
-  { component : HomeStoreComponent , path : 'home-store'}
+  { component : HomeStoreComponent , path : 'home-store'},
+  { component : CartComponent , path : 'cart'}
 
 ];
 

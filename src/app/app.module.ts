@@ -22,6 +22,11 @@ import { StoreComponent } from './store/store.component';
 import { HeaderComponent } from './store/header/header.component';
 import { HomeStoreComponent } from './store/home-store/home-store.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FiltersComponent } from './store/filters/filters.component';
+import { ProductBoxComponent } from './store/product-box/product-box.component';
+import { CartComponent } from './store/cart/cart.component';
+import { CartService } from './store/services/cart.service';
+import { StoreService } from './store/services/store.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +44,10 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     StoreComponent,
     HeaderComponent,
     HomeStoreComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FiltersComponent,
+    ProductBoxComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +59,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     HttpClientModule,
     ToastrModule.forRoot(),
   ],
-  providers: [],
+  providers: [CartService,StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

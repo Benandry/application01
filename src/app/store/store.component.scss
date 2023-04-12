@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.sidebar{
+    left: 0;
+    height: 100%;
+    width: 15%;
+    padding: 1.5rem;
+    border-right: 1px solid black;
+}
+.container{
+    left: 0;
+    margin: auto;
+}
+
+.container p{
+    margin-left: 300px;
+}
